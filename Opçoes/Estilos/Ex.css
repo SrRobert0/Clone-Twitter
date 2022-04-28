@@ -1,0 +1,42 @@
+.titulo .entrada {
+    background: rgba(215, 215, 215, 0.2);
+    width: 100%;
+    margin: 0 0 0 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #636363;
+    font-size: 15pt;
+}
+
+.titulo .entradaA {
+    background: none;
+    width: 100%;
+    border: dodgerblue solid 1px;
+    margin: 0 -1px 0 19px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #636363;
+    font-size: 15pt;
+}
+
+.titulo ion-icon {
+    padding: 10px 20px 10px 20px;
+}
+
+.lupaA {
+    color: dodgerblue;
+}
+
+.titulo input {
+    background: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12pt;
+    color: white;
+}
+

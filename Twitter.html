@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twaitter</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter.2.ico">
+    <link rel="stylesheet" type="text/css" href="Estilos/Twitter.css">
+</head>
+<body>
+    <div class="corpo">
+        <aside class="esquerda">
+            <div class="logo"><ion-icon name="logo-twitter"></ion-icon></div>
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li onclick="Lar()"><ion-icon name="home"></ion-icon> <p>Página Inicial</p></li>
+                    <li onclick="Explorar()"><ion-icon name="compass-outline"></ion-icon><p>Explorar</p></li>
+                    <li onclick="Notificacoes()"><ion-icon name="notifications-outline"></ion-icon></ion-icon><p>Notificações</p></li>
+                    <li onclick="Mensagens()"><ion-icon name="mail-outline"></ion-icon><p>Mensagens</p></li>
+                    <li onclick="Favoritos()"><ion-icon name="bookmark-outline"></ion-icon><p>Favoritos</p></li>
+                    <li onclick="Listas()"><ion-icon name="reader-outline"></ion-icon><p>Listas</p></li>
+                    <li onclick="Perfil()"><ion-icon name="person-outline"></ion-icon><p>Perfil</p></li>
+                    <li onclick="Mais()"><ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon><p>Mais</p></li>
+                </ul>
+            </nav>
+
+            <div class="tweet" onclick="Tweet()">
+                <input type="submit" value="Tweetar">
+            </div>
+                
+            <div class="conta">
+                
+            </div>
+        </aside>
+        <aside class="meio">
+            <iframe src="Opçoes/Lar.html" id="iframeM"></iframe>
+        </aside>
+        <aside class="direita">
+            <iframe src="Opçoes/Ex.html" id="iframeD"></iframe>
+        </aside>
+    </div>
+
+    <script>
+        var meio = document.getElementById('iframeM');
+
+
+        function Lar() {
+            meio.setAttribute('src', 'Opçoes/Lar.html');
+        }
+
+        function Explorar() {
+            meio.setAttribute('src', 'Opçoes/Ex.html');
+        }
+
+        function Notificacoes() {
+            meio.setAttribute('src', 'Opçoes/');
+        }
+
+        function Mensagens() {
+            meio.setAttribute('src', 'Opçoes/');
+        }
+
+        function Favoritos() {
+            meio.setAttribute('src', 'Opçoes/');
+        }
+
+        function Listas() {
+            meio.setAttribute('src', 'Opçoes/');
+        }
+
+        function Perfil() {
+            meio.setAttribute('src', 'Opçoes/');
+        }
+
+        function Mais() {
+            alert("Tem mais nada não fih '-'");
+        }
+
+        function Tweet() {
+            alert("Vai tweetar não :b");
+        }
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
